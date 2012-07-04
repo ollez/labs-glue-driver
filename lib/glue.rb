@@ -1,5 +1,6 @@
 require "glue/version"
 require "active_support/core_ext"
+require "net/http"
 
 class Glue
   def initialize(options = {})
