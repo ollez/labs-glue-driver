@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:5000/workflows
+    body:
+      encoding: US-ASCII
+      string: rule=firstroute&smooks_config_url=http%3A%2F%2Fexample.org%2Fflows%2F4fd0a6fcce230a9f80000007%2Fsmooks_config.xml
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Jun 2012 09:07:30 GMT
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '27'
+      Server:
+      - Jetty(6.1.25)
+    body:
+      encoding: US-ASCII
+      string: ! '{"flow-name":"firstroute6"}'
+    http_version: 
+  recorded_at: Fri, 08 Jun 2012 09:07:30 GMT
+recorded_with: VCR 2.2.0
